@@ -19,7 +19,7 @@ body {
 }
 
 .header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -27,22 +27,21 @@ body {
     gap: 5px;
 }
 
-.header h1::after {
-    content: '\1F9EA'; 
-}
+
 
 .form-container {
     background-color: #fff;
     color: #333;
     border-radius: 8px;
-    padding: 30px;
+    padding: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 90%;
     text-align: center;
 }
 
 .form-container input[type="email"],
-.form-container input[type="password"] {
+.form-container input[type="password"],
+.form-container input[type="text"]{
     width: 90%;
     padding: 10px;
     margin: 10px 0px;
@@ -73,6 +72,15 @@ body {
 }
 
 
+/* Philtre */
+
+position: absolute;
+width: 135px;
+height: 135px;
+left: 1010px;
+top: 285px;
+
+background: url(.png);
 
 
 

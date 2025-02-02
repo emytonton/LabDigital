@@ -1,0 +1,288 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+p{
+    font-weight: 500;
+}
+
+h2{
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+#nav {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+        }
+
+.main {
+
+    width: 50%;
+    padding: 20px;
+    
+}
+
+
+.sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+#nav a{
+    text-decoration: none;
+}
+
+
+#nav  ul {
+    list-style: none;
+}
+
+#nav  ul li a {
+    text-decoration: none;
+    color:  darkmagenta;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#nav a:hover{
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    width: 200px;
+}
+
+
+#input1{
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#boasvindas{
+    background-color:  #f4f4f4;
+    border-radius: 15px;
+    width: 750px;
+    height: 20vh; 
+    margin-bottom: 30px;
+
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+
+td, th{
+    padding: 10px 15px;
+    border: 1px solid #DDD;
+    text-align: center;
+}
+
+td{
+    color: #333;
+    font-weight: 600;
+
+}
+
+
+#profile{
+    
+        background-color: darkmagenta;
+        height: 20px;
+        width: 65px;
+        border: none;
+        border-radius: 6px;
+        color: #FFF;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+    
+}
+
+
+
+
+#nav, .sidebar {
+    height: 94vh; 
+}
+
+#conteudo {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+   
+}
+
+#conteudo1{
+    background-color:darkmagenta;
+    border-radius: 8px;
+ 
+    text-align: center;
+    flex:1;
+}
+
+#conteudo2{
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+    flex:1;
+}
+
+
+
+#conteudo3{
+    background-color:darkmagenta;
+    border-radius: 8px;
+    text-align: center;
+    flex:1;
+}
+
+
+#noticias ul li a {
+
+    color:  darkmagenta;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 85px;
+}
+
+
+select{  
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: #ebebeb;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    #nav, .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .main {
+        width: 100%;
+    }
+
+    #conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #conteudo1, #conteudo2, #conteudo3 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #profile {
+        font-size: 0.9rem;
+        width: 60px;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    #nav {
+        width: 100%;
+    }
+    
+    .main {
+        width: 100%;
+    }
+    
+    #conteudo {
+        gap: 15px;
+    }
+    
+    #conteudo1, #conteudo2, #conteudo3 {
+        width: 100%;
+        margin: 0;
+    }
+
+    select {
+        width: 100%;
+
+    }
+
+    #profile {
+        font-size: 0.9rem;
+        width: 60px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    #nav ul li a {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    #profile {
+        font-size: 0.9rem;
+        width: 60px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    td, th {
+        padding: 8px 12px;
+    }
+}
+
+
+#duvida{
+    margin-top: 80px;
+    background-color: rgba(128, 0, 128, 0.8);;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 50%  
+
+}
+
+
+.btn {
+    background-color: white;
+    color: darkmagenta;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 25%;
+  }
+
+ 

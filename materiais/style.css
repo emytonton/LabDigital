@@ -1,0 +1,97 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+        }
+        .container h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #nav{
+            width: 17%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+
+        #nav h2{
+                color: black;
+                font-weight: 800;
+                margin-bottom: 40px;
+            
+        }
+
+        #nav a{
+            text-decoration: none;
+        }
+        
+        
+        #nav  ul {
+            list-style: none;
+        }
+        
+        #nav  ul li a {
+            text-decoration: none;
+            color:  darkmagenta;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+
+        
+        #nav a:hover{
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            width: 200px;
+        }
+        
+
+
+        .container {
+            width: 75%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section {
+            margin-bottom: 20px;
+        }
+
+
+
+        h2 {
+            color: darkmagenta;
+        }
+
+        .container .content-section .materiais  {
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        .container .content-section .materiais .materiaislista  {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .container .content-section .materiais .materiaislista a {
+            text-decoration: none;
+            color: darkmagenta;
+        }
+        .container .content-section .materiais .materiaislista a:hover {
+            text-decoration: underline;
+        }
+    

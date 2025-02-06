@@ -10,7 +10,6 @@
 
 body {
     color: white;    
-    
 }
 
 h2 {
@@ -32,15 +31,19 @@ form button {
     background: linear-gradient(90deg, #968ee2 0%, #ab7cb8 100%);
 }
 
+
+
+
 #voltar{
     display: flex;
-    margin-bottom: 650px;
-    margin-right: 550px;
-    padding: 0px;
+    margin-bottom: 700px;
+    margin-right: 630px;
     width: 14%;
     background-color: rgba(255, 255, 255, 0.2);
     
 }
+
+
 
 input, button {      
     border: none;
@@ -120,13 +123,13 @@ p {
     z-index: 1;
 }
 
+
 .direita{
-   background-color: white;
+   background-color: #483D8B;
    border-radius: 16px;
 }
 
-
-.formLogin, .facaLogin {    
+.formLogin,  .formCadastro, .facaCadastro {    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,5 +163,7 @@ p {
     right: 0;    
     z-index: 0;
 }
+
+
 
 

@@ -1,24 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #8A2BE2;
+    background-color: #14151a;
     margin: 0;
     padding: 20px;
     display: flex;
 }
 
 #nav{
-    width: 17%;
+    width: 15%;
     height: 800px;
-    background-color: #f4f4f4;
+    background-color: #14151a;
     padding: 20px;
     border-radius: 15px;
 }
 
 
 #nav h2{
-        color: black;
-        font-weight: 800;
-        margin-bottom: 40px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    margin-left: 15%;
+    color: #f9f9f9;
     
 }
 
@@ -47,13 +48,14 @@ body {
 #nav a:hover{
     background-color: rgba(0,0,0,0.3);
     border-radius: 15px;
-    width: 200px;
+    
 }
 
 
 
 .container {
     width: 40%;
+    height: 85vh;
     margin: 0 auto;
     padding: 20px;
     background: white;

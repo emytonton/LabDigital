@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-            background-color: #8A2BE2;
+    font-family: "Montserrat", serif;
+            background-color: #14151a;
             margin: 0;
             padding: 20px;
             display: flex;
@@ -9,20 +9,21 @@ body {
 
 
 #nav{
-    width: 17%;
-    height: 800px;
-    background-color: #f4f4f4;
+    width: 15%;
+    background-color: #14151a;
     padding: 20px;
     border-radius: 15px;
 }
 
 
-#nav h2{
-        color: black;
-        font-weight: 800;
-        margin-bottom: 40px;
-    
+#logo h1{
+    font-size: 1.5rem;
+    margin-left: 4%;
+    color: #e9ecef;
+    margin-bottom: 24%;
+
 }
+
 
 #nav a{
     text-decoration: none;
@@ -54,14 +55,26 @@ body {
 
 
 .container {
-    max-width: 800px;
-    margin: auto;
+
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 23%;
     background: white;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
+#containerpai {
+    width: 75%;
+    height:90vmin;
+    margin: auto;
+    background-color: #8A2BE2;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -75,7 +88,7 @@ h1 {
 
 .option {
     display: block;
-    background:#8A2BE2;
+    background:#BA55D3;
     width: 100%;
     color: white;
     border: none;

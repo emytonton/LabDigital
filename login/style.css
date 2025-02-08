@@ -34,10 +34,10 @@ form button {
 
 #voltar{
     display: flex;
-    margin-bottom: 650px;
-    margin-right: 550px;
+    margin-bottom: 500px;
+    margin-right: 1650px;
     padding: 0px;
-    width: 14%;
+    width: 5%;
     background-color: rgba(255, 255, 255, 0.2);
     
 }

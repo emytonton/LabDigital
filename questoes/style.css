@@ -141,3 +141,22 @@ h1 {
         display: none;
     }
 }
+
+
+.profile-dropdown {
+    position: absolute;
+    background-color: #282828;
+    padding: 1rem;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+}
+
+.profile-dropdown.show {
+    display: block;
+}
+
+.profile-option {
+    padding: 0.5rem 0;
+    cursor: pointer;
+}

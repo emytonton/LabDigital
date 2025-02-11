@@ -59,6 +59,8 @@ h2{
 
 #nav a{
     text-decoration: none;
+    width: 100%;
+   
 }
 
 
@@ -323,3 +325,23 @@ select{
   }
 
  
+
+  .profile-dropdown {
+    position: absolute;
+    background-color: #282828;
+    padding: 1rem;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+}
+
+.profile-dropdown.show {
+    display: block;
+}
+
+.profile-option {
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+

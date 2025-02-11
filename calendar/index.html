@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="teste.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Calendário de Atividades</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Lab Digital</title>
-    
+    <title>Quiz de Química</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="nav">
@@ -23,7 +22,7 @@
             <ul>
                     <li><a href="../pagprincipal/teste.html"><i class="bi bi-house-fill"></i><span>Home</span> </a></li>
                     <li><a href="../materiais/index.html"><i class="bi bi-journal"></i><span>Matériais</span></a></li>
-                    <li><a href="../calendar/index.html"><i class="bi bi-calendar-check-fill"></i><span>Calendário</span></a></li>
+                    <li><a href="./index.html"><i class="bi bi-calendar-check-fill"></i><span>Calendário</span></a></li>
                     <li><a href="../questoes/index.html"><i class="bi bi-question-circle-fill"></i><span>Questões</span></a></li>
                     <li><a href="../labdigital/index.html"><i class="bi bi-hexagon-fill"></i><span>Laboratório Digital</span></a></li>
                     <li><a href="#" id="profilenav"><i class="bi bi-person-fill"></i><span>Profile</span></a>
@@ -33,39 +32,33 @@
                         </div>
                     </li>
                     
-                    
             </ul>
             
 
     </div>
 
 
-    <div class="main">
-        <input id = "input1" type="text" placeholder="Pesquisar">
-
-        <div id="boasvindas">
-        <h1>Explore nosso site e mergulhe no mundo da química! Aqui você encontrará recursos, materiais e ferramentas para aprimorar seus estudos e realizar experimentos virtuais.</h1>
-        <p></p>
+    <div class="container">
+        <h1>Calendário de Atividades</h1>
+        <form id="activityForm">
+            <input type="date" id="date" required>
+            <input type="text" id="description" placeholder="Descrição da Atividade" required>
+            <button type="submit">Adicionar Atividade</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="activityList">
+                
+            </tbody>
+        </table>
     </div>
-
-
-   
-    <div id="noticias">
-        <h1> Noticías atuais sobre Química</h1>
-         <ul>
-       <li> <a href="URL_DO_SEU_LINK" target="_blank">Noticía 1</a></li>
-       <li> <a href="URL_DO_SEU_LINK" target="_blank">Noticía 2</a></li>
-       <li> <a href="URL_DO_SEU_LINK" target="_blank">Noticía 3</a></li>
-        </ul>
-
-    </div>
-
-
-</div>
-   
-    <script src="./script.js"></script>
-</body>
-</html>
-
+    <script src="script.js"></script>
 </body>
 </html>

@@ -76,28 +76,45 @@ loadQuestion();
 
 
 
-const profileLink = document.getElementById('profilenav');
-        const profileDropdown = document.getElementById('profileDropdown');
+const profileNav = document.getElementById("profilenav");
+const profileDropdown = document.getElementById("profileDropdown");
+const userTypeElement = document.getElementById("userType");
+const logoutButton = document.getElementById("logout");
 
-        profileLink.addEventListener('click', function(event) {
-            event.preventDefault();
-            profileDropdown.classList.toggle('show');
-        });
 
-        document.getElementById('logout').addEventListener('click', function() {
-            alert('Você foi deslogado!');
-            //adicionar logica para deslogar
-        });
+function setUserType() {
+    const loggedUser = localStorage.getItem("loggedUser");
 
-        window.onclick = function(event) {
-            if (!event.target.matches('#profilenav')) {
-                if (profileDropdown.classList.contains('show')) {
-                    profileDropdown.classList.remove('show');
-                }
-            }
-        }
-
-document.getElementById("logout").addEventListener("click", function() {
+    if (!loggedUser) {
+        
+        userTypeElement.textContent = "Não logado";
+        logoutButton.textContent = "Entrar";
+        logoutButton.addEventListener("click", function () {
             window.location.href = "../login/index.html"; 
         });
+    } else if (loggedUser === "ericapaivas@gmail.com") {
         
+        userTypeElement.textContent = "Professor";
+        logoutButton.textContent = "Logout";
+        logoutButton.addEventListener("click", handleLogout);
+    } else {
+        
+        userTypeElement.textContent = "Estudante";
+        logoutButton.textContent = "Logout";
+        logoutButton.addEventListener("click", handleLogout);
+    }
+}
+
+
+function handleLogout() {
+    localStorage.removeItem("jwt");
+    localStorage.removeItem("loggedUser"); 
+    alert("Logout realizado com sucesso.");
+    window.location.href = "../login/index.html"; 
+}
+
+
+profileNav.addEventListener("click", function () {
+    profileDropdown.classList.toggle("show");
+    setUserType(); 
+});

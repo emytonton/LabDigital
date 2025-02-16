@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questoes",
+  "info": {
+    "singularName": "questao",
+    "pluralName": "questoes",
+    "displayName": "questoes"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "enuciado": {
+      "type": "string"
+    },
+    "corpo": {
+      "displayName": "textoopcao",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.textoopcao"
+    }
+  }
+}

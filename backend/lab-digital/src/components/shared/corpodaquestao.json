@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_corpodaquestaos",
+  "info": {
+    "displayName": "corpodaquestao"
+  },
+  "options": {},
+  "attributes": {
+    "correta": {
+      "type": "boolean"
+    }
+  }
+}

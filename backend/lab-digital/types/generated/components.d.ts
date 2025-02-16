@@ -1,5 +1,15 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedCorpodaquestao extends Struct.ComponentSchema {
+  collectionName: 'components_shared_corpodaquestaos';
+  info: {
+    displayName: 'corpodaquestao';
+  };
+  attributes: {
+    correta: Schema.Attribute.Boolean;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -62,14 +72,27 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTextoopcao extends Struct.ComponentSchema {
+  collectionName: 'components_shared_textoopcaos';
+  info: {
+    displayName: 'textoopcao';
+  };
+  attributes: {
+    correta: Schema.Attribute.Boolean;
+    textodaopcao: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.corpodaquestao': SharedCorpodaquestao;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.textoopcao': SharedTextoopcao;
     }
   }
 }

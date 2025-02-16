@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_textoopcaos",
+  "info": {
+    "displayName": "textoopcao"
+  },
+  "options": {},
+  "attributes": {
+    "textodaopcao": {
+      "type": "string"
+    },
+    "correta": {
+      "type": "boolean"
+    }
+  }
+}

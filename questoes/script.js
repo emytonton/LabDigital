@@ -118,3 +118,5 @@ profileNav.addEventListener("click", function () {
     profileDropdown.classList.toggle("show");
     setUserType(); 
 });
+
+

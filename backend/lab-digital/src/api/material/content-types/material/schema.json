@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materiais",
+  "info": {
+    "singularName": "material",
+    "pluralName": "materiais",
+    "displayName": "materiais"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulomaterial": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "section": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::section.section",
+      "inversedBy": "materiais"
+    }
+  }
+}

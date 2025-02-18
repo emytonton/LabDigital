@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atividades",
+  "info": {
+    "singularName": "atividade",
+    "pluralName": "atividades",
+    "displayName": "atividades",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "data": {
+      "type": "date"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "concluida": {
+      "type": "boolean"
+    }
+  }
+}

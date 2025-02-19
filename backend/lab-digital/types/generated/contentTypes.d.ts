@@ -587,7 +587,6 @@ export interface ApiMaterialMaterial extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    section: Schema.Attribute.Relation<'manyToOne', 'api::section.section'>;
     titulomaterial: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -618,35 +617,6 @@ export interface ApiQuestaoQuestao extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiSectionSection extends Struct.CollectionTypeSchema {
-  collectionName: 'sections';
-  info: {
-    displayName: 'sections';
-    pluralName: 'sections';
-    singularName: 'section';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::section.section'
-    > &
-      Schema.Attribute.Private;
-    materiais: Schema.Attribute.Relation<'oneToMany', 'api::material.material'>;
-    publishedAt: Schema.Attribute.DateTime;
-    titulo: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1170,7 +1140,6 @@ declare module '@strapi/strapi' {
       'api::global.global': ApiGlobalGlobal;
       'api::material.material': ApiMaterialMaterial;
       'api::questao.questao': ApiQuestaoQuestao;
-      'api::section.section': ApiSectionSection;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

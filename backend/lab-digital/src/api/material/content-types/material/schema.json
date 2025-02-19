@@ -15,12 +15,6 @@
     },
     "link": {
       "type": "string"
-    },
-    "section": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::section.section",
-      "inversedBy": "materiais"
     }
   }
 }

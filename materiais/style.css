@@ -75,10 +75,7 @@
 
 
 
-        h2 {
-            color: darkmagenta;
-        }
-
+   
         .container .content-section .materiais  {
             list-style-type: none;
             padding: 0;
@@ -130,3 +127,28 @@
             background-color: rgba(255, 0, 0, 0.2);
         }
         
+
+
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+
+.materiaislista button {
+    margin-left: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.materiaislista button:hover {
+    background-color: #cc0000;
+}

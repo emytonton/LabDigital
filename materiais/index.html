@@ -33,40 +33,24 @@
         </ul>
     </div>
 
+
+
     <div class="container">
         <h1>Materiais de Química</h1>
-
+        <form id="adicionarForm" style="display: none;">
+            <input type="text" id="titulo" placeholder="Título do Material" required>
+            <input type="text" id="link" placeholder="Link do material" required>
+            <button type="submit">Adicionar material</button>
+        </form>
         <!-- Seções e materiais -->
         <div class="content-section">
-            <h2>Estrutura Atômica</h2>
-            <ul class="materiais">
-                <li class="materiaislista">
-                    <a href="link_para_material1.pdf">Apresentação sobre Estrutura Atômica</a>
-                    <!-- Botão de exclusão será adicionado dinamicamente via JavaScript -->
-                </li>
-                <li class="materiaislista">
-                    <a href="link_para_material2.pdf">Vídeo: Modelo Atômico de Dalton</a>
-                </li>
-                <li class="materiaislista">
-                    <a href="link_para_material3.pdf">Artigo: Teoria Quântica</a>
-                </li>
-            </ul>
-        </div>
 
-        <div class="content-section">
-            <h2>Tabela Periódica</h2>
             <ul class="materiais">
                 <li class="materiaislista"><a href="link_para_material4.pdf">Tabela Periódica Interativa</a></li>
                 <li class="materiaislista"><a href="link_para_material5.pdf">Vídeo: Grupos e Períodos</a></li>
                 <li class="materiaislista"><a href="link_para_material6.pdf">Infográfico: Elementos Químicos</a></li>
             </ul>
         </div>
-
-        <!-- Botões de administração -->
-        <!-- Botão de adicionar nova seção -->
-        <button id="addSectionButton" style="display: none;">Adicionar Seção</button>
-
-        <!-- Botão de adicionar material (será exibido ao administrador) -->
         <button id="addMaterialButton" style="display: none;">Adicionar Material</button>
     </div>
 

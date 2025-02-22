@@ -1,42 +1,36 @@
 body {
     font-family: "Montserrat", serif;
-            background-color: #14151a;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-
+    background-color: #14151a;
+    margin: 0;
+    padding: 20px;
+    display: flex;
 }
 
-
-#nav{
+#nav {
     width: 15%;
     background-color: #14151a;
     padding: 20px;
     border-radius: 15px;
 }
 
-
-#logo h1{
+#logo h1 {
     font-size: 1.5rem;
     margin-left: 4%;
     color: #e9ecef;
     margin-bottom: 24%;
-
 }
 
-
-#nav a{
+#nav a {
     text-decoration: none;
 }
 
-
-#nav  ul {
+#nav ul {
     list-style: none;
 }
 
-#nav  ul li a {
+#nav ul li a {
     text-decoration: none;
-    color:  darkmagenta;
+    color: darkmagenta;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -45,17 +39,13 @@ body {
     font-size: 20px;
 }
 
-
-
-#nav a:hover{
-    background-color: rgba(0,0,0,0.3);
+#nav a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     width: 200px;
 }
 
-
 .container {
-
     width: 50%;
     margin-top: 10%;
     margin-left: 23%;
@@ -63,20 +53,18 @@ body {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
 }
 
 #containerpai {
-    width: 75%;
-    height:90vmin;
+    width: 85%;
+    height: auto;
     margin: auto;
-    background-color: white;
+    background-color: #14151a;
     padding: 20px;
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 1%;
 }
-
-
 
 h1 {
     text-align: center;
@@ -88,7 +76,7 @@ h1 {
 
 .option {
     display: block;
-    background:#BA55D3;
+    background: #BA55D3;
     width: 100%;
     color: white;
     border: none;
@@ -111,7 +99,7 @@ h1 {
 .next-button {
     margin-top: 20px;
     display: none;
-    background:#9932CC;
+    background: #9932CC;
     width: 100%;
     color: white;
     border: none;
@@ -121,27 +109,6 @@ h1 {
     border-radius: 5px;
     text-align: center;
 }
-
-@media (max-width: 768px) {
-    body {
-        flex-direction: row;
-        justify-content: center;
-    }
-    #container{
-        width: 83%;
-        margin-left: 10%;
-    }
-    #nav {
-        width: 17%;
-        height: auto;
-        margin-bottom: 0;
-
-    }
-    span{
-        display: none;
-    }
-}
-
 
 .profile-dropdown {
     position: absolute;
@@ -159,4 +126,115 @@ h1 {
 .profile-option {
     padding: 0.5rem 0;
     cursor: pointer;
+}
+
+.questao {
+    border: 1px solid #444;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #444;
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.resultado {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.options button:hover {
+    background-color: #45a049;
+}
+
+#btnAdicionarQuestao {
+    background-color: darkmagenta;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#btnAdicionarQuestao:hover {
+    background-color: #45a049;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 93%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #45a049;
 }

@@ -597,6 +597,7 @@ export interface ApiMaterialMaterial extends Struct.CollectionTypeSchema {
 export interface ApiQuestaoQuestao extends Struct.CollectionTypeSchema {
   collectionName: 'questoes';
   info: {
+    description: '';
     displayName: 'questoes';
     pluralName: 'questoes';
     singularName: 'questao';
@@ -605,18 +606,19 @@ export interface ApiQuestaoQuestao extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    corpo: Schema.Attribute.Component<'shared.textoopcao', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    enuciado: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::questao.questao'
     > &
       Schema.Attribute.Private;
+    opcoes: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
+    resposta_correta: Schema.Attribute.Integer;
+    titulo: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

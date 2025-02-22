@@ -4,20 +4,21 @@
   "info": {
     "singularName": "questao",
     "pluralName": "questoes",
-    "displayName": "questoes"
+    "displayName": "questoes",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "enuciado": {
+    "titulo": {
       "type": "string"
     },
-    "corpo": {
-      "displayName": "textoopcao",
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.textoopcao"
+    "opcoes": {
+      "type": "json"
+    },
+    "resposta_correta": {
+      "type": "integer"
     }
   }
 }

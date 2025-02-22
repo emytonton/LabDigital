@@ -625,6 +625,37 @@ export interface ApiQuestaoQuestao extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSimuladoSimulado extends Struct.CollectionTypeSchema {
+  collectionName: 'simulados';
+  info: {
+    displayName: 'Simulados';
+    pluralName: 'simulados';
+    singularName: 'simulado';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    acertos: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    data: Schema.Attribute.Date;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::simulado.simulado'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    quantidade_questoes: Schema.Attribute.Integer;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    usuario: Schema.Attribute.String;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1142,6 +1173,7 @@ declare module '@strapi/strapi' {
       'api::global.global': ApiGlobalGlobal;
       'api::material.material': ApiMaterialMaterial;
       'api::questao.questao': ApiQuestaoQuestao;
+      'api::simulado.simulado': ApiSimuladoSimulado;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

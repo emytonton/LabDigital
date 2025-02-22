@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Simulado</title>
+</head>
+<body>
+    <div id="nav">
+        <div id="logo">
+            <h1>Lab digital</h1>
+        </div>
+        <ul>
+            <li><a href="../pagprincipal/teste.html"><i class="bi bi-house-fill"></i><span>Home</span></a></li>
+            <li><a href="../materiais/index.html"><i class="bi bi-journal"></i><span>Matériais</span></a></li>
+            <li><a href="../calendar/index.html"><i class="bi bi-calendar-check-fill"></i><span>Calendário</span></a></li>
+            <li><a href="../questoes/index.html"><i class="bi bi-question-circle-fill"></i><span>Questões</span></a></li>
+            <li><a href="../simulado/index.html"><i class="bi bi-hourglass-split"></i><span>Simulado</span></a></li>
+            <li><a href="../labdigital/index.html"><i class="bi bi-hexagon-fill"></i><span>Laboratório Digital</span></a></li>
+            <li><a href="#" id="profilenav"><i class="bi bi-person-fill"></i><span>Profile</span></a>
+                <div class="profile-dropdown" id="profileDropdown">
+                    <div class="profile-option" id="logout"><i class="bi bi-arrow-bar-left"></i>Logout</div>
+                    <div class="profile-option" id="userType">Estudante</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="containerpai">
+        <div class="container">
+            <h1>Simulado</h1>
+    
+           
+            <div id="simulado-container">
+                <div id="configuracoes">
+                    <label for="quantidadeQuestoes">Quantidade de questões:</label>
+                    <input type="number" id="quantidadeQuestoes" min="1" max="50" value="10">
+                    <button id="iniciarSimulado">Iniciar Simulado</button>
+                </div>
+                <div id="question-container" style="display: none;">
+                    <h2 id="question"></h2>
+                    <div class="options" id="options"></div>
+                    <div id="result" class="result"></div>
+                    <button id="next-button" class="next-button" style="display: none;">Próxima Pergunta</button>
+                </div>
+                <div id="resultado-final-aluno" style="display: none;">
+                    <h2>Resultado Final</h2>
+                    <p>Você acertou <span id="total-acertos">0</span> de <span id="total-questoes">0</span> questões.</p>
+                    
+                </div>
+            </div>
+    
+            
+            <div id="resultado-final-professor" style="display: none;">
+                <h2>Resultados Finais dos Simulados Realizados</h2>
+                <div id="resultados-alunos"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

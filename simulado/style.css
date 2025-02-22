@@ -1,0 +1,218 @@
+body {
+    font-family: "Montserrat", serif;
+    background-color: #14151a;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+}
+
+#nav {
+    width: 15%;
+    background-color: #14151a;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#logo h1 {
+    font-size: 1.5rem;
+    margin-left: 4%;
+    color: #e9ecef;
+    margin-bottom: 24%;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav ul {
+    list-style: none;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: darkmagenta;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#nav a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 200px;
+}
+
+.container {
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 23%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#containerpai {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    background-color: #14151a;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 1%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.option {
+    display: block;
+    background: #BA55D3;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.option:hover {
+    background: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.next-button {
+    margin-top: 20px;
+    display: none;
+    background: #9932CC;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.profile-dropdown {
+    position: absolute;
+    background-color: #282828;
+    padding: 1rem;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+}
+
+.profile-dropdown.show {
+    display: block;
+}
+
+.profile-option {
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.questao {
+    border: 1px solid #444;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #444;
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.resultado {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.options button:hover {
+    background-color: #45a049;
+}
+
+#concluido-button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+#concluido-button:hover {
+    background-color: #45a049; 
+}
+
+#concluido-button:active {
+    background-color: #3d8b40; 
+}
+
+
+#quantidadeQuestoes {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#iniciarSimulado {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+}
+
+#iniciarSimulado:hover {
+    background-color: #45a049;
+}
+
+#iniciarSimulado:active {
+    background-color: #3d8b40;
+}

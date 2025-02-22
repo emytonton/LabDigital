@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "simulados",
+  "info": {
+    "singularName": "simulado",
+    "pluralName": "simulados",
+    "displayName": "Simulados"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "usuario": {
+      "type": "string"
+    },
+    "quantidade_questoes": {
+      "type": "integer"
+    },
+    "acertos": {
+      "type": "string"
+    },
+    "data": {
+      "type": "date"
+    }
+  }
+}

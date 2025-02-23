@@ -26,8 +26,18 @@ async function carregarQuestoes() {
 
 function verificarUsuario() {
     const loggedUser = localStorage.getItem("loggedUser");
-
-    if (loggedUser === "ericapaivas@gmail.com") {
+    
+    if (!loggedUser) {
+        document.getElementById("simulado-container").style.display = "none";
+        document.getElementById("resultado-final-professor").style.display = "none"; 
+    
+        const avisoLogin = document.getElementById("aviso-login");
+        if (avisoLogin) {
+            avisoLogin.style.display = "block";
+        }
+    }
+    
+    else if (loggedUser === "ericapaivas@gmail.com") {
         // Se for o professor, exibe apenas a seção de resultados
         document.getElementById("simulado-container").style.display = "none";
         document.getElementById("resultado-final-professor").style.display = "block";

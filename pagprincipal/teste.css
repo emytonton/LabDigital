@@ -17,6 +17,8 @@ p{
 h1{
     font-size: 1.5rem;
     margin-left: 1%;
+ 
+    line-height: 1.6;
 
 }
 
@@ -41,9 +43,9 @@ h2{
 
     width: 80%;
     padding: 20px;
-    background-color: #f1c6f1;
+    background-color: black;
 
-    color: #14151a;
+    color: white;
     border-radius: 50px;
     
 }
@@ -101,7 +103,7 @@ h2{
 
 
 #input1 {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: white;
     color: #14151a;
 }
 
@@ -343,5 +345,78 @@ select{
     padding: 0.5rem 0;
     cursor: pointer;
 }
+
+
+#gif {
+    position: fixed; 
+    bottom: 6%; 
+    right: 31%; 
+    width: 20%; 
+    height: auto; 
+    border: 18px;
+   
+}
+
+.input-container {
+    position: relative;
+    width: 100%; 
+}
+
+#input1 {
+    
+    padding-left: 3%; 
+}
+
+.input-container .bi-search {
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    right: 3%;
+    transform: translateY(-50%);
+    color: #aaa; 
+}
+
+
+
+.resultados-pesquisa {
+    color: #14151a;
+    position: absolute;
+    width: 99%;
+    top: 100%; 
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px; 
+    overflow-y: auto; 
+    z-index: 1000; 
+    display: none; 
+}
+
+
+.resultados-pesquisa .material {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.resultados-pesquisa .material:last-child {
+    border-bottom: none;
+}
+
+.resultados-pesquisa .material:hover {
+    background-color: #f9f9f9;
+}
+
+
+.resultados-pesquisa.visivel {
+    display: block;
+}
+
+.material a:hover {
+    text-decoration: underline;
+}
+
 
 

@@ -70,45 +70,8 @@ h1 {
     text-align: center;
 }
 
-.options {
-    margin: 20px 0;
-}
 
-.option {
-    display: block;
-    background: #BA55D3;
-    width: 100%;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-}
 
-.option:hover {
-    background: #0056b3;
-}
-
-.result {
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-.next-button {
-    margin-top: 20px;
-    display: none;
-    background: #9932CC;
-    width: 100%;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-}
 
 .profile-dropdown {
     position: absolute;

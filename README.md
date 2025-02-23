@@ -28,41 +28,38 @@ Usuario não logado, aluno e professor.
 
 - Upload e Organização de Materiais Didáticos: Professores podem adicionar PDFs, vídeos e apresentações.
 - Banco de Questões: Questões enviadas por professores que podem ser respondidas pelos alunos.
-- Jogos Educativos: Mini-games que reforcem conceitos de química de forma interativa.
-- Área de Estudos: Acesso a materiais e simulados.
+- Simulados: ALunos podem realizar simulados.
+- Calendário: Calendário das proximas atividades.
 
 
 ## :spiral_calendar: Entidades ou tabelas do sistema
 
 # Usuários
-- ID
-- Nome
-- Tipo (professor, aluno, gestor, etc.)
-- Email e senha
+- username
+- email
+- role
+- senha
   
 # Materiais
-- ID
 - Título
-- Descrição
-- Tipo (PDF, vídeo, etc.)
 - Link/Arquivo
 
 # Questões
--ID
-- Enunciado
-- Respostas (opções)
+- Titulo
+- Opcoes
 - Resposta Correta
 
 # Simulados
-- ID
-- Nome
-- Questões associadas (IDs de referência)
+- usuario
+- Quantidade de Questoes
+- Acertos
+- Data
 
-# Jogos
-- ID
-- Nome
+# Calendario
+
+- Data
 - Descrição
-- Link/Implementação
+- Status
 
 
 
@@ -77,11 +74,11 @@ Usuario não logado, aluno e professor.
 
 **Frontend:**
 
-Lista as tecnologias, frameworks e bibliotecas utilizados.
+Html, CSS, JS
 
 **Backend:**
 
-Lista as tecnologias, frameworks e bibliotecas utilizados.
+Strapi, JS
 
 
 ## :shipit: Operações implementadas para cada entidade da aplicação
@@ -89,9 +86,9 @@ Lista as tecnologias, frameworks e bibliotecas utilizados.
 
 | Entidade| Criação | Leitura | Atualização | Remoção |
 | --- | --- | --- | --- | --- |
-| Entidade 1 | X |  X  |  | X |
-| Entidade 2 | X |    |  X | X |
-| Entidade 3 | X |    |  |  |
+| Não logado |  |  X  |  |  |
+| Aluno | X |  x  |   |   |
+| Professor | X |  x  | x | x |
 
 > Lembre-se que é necessário implementar o CRUD de pelo menos duas entidades.
 
@@ -99,5 +96,13 @@ Lista as tecnologias, frameworks e bibliotecas utilizados.
 
 | Método HTTP | URL |
 | --- | --- |
-| GET | api/entidade1/|
-| POST | api/entidade2 |
+| GET |api/questoes|
+| GET |api/simulados|
+| GET |	api/materiais|
+| GET |api/login|
+| POST | api/simulados |
+| POST | api/login|
+| POST | api//materiais |
+| DELETE | api/materiais/{documentId} |
+| PUT | api/materiais/{documentId} |
+
